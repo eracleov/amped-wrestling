@@ -24,7 +24,7 @@ export default function Home() {
         <div className="hero__overlay" />
         <div className="container hero__content">
           <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-            <span className="hero__badge">USA Wrestling Sanctioned Club</span>
+            <span className="hero__badge">Where Texas State Champions Train</span>
             <h1 className="hero__title">AMPED WRESTLING</h1>
             <p className="hero__subtitle">{clubInfo.description}</p>
             <div className="hero__actions">

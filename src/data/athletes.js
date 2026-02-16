@@ -4,11 +4,12 @@ export const athletes = [
     weightClass: 'Varsity',
     division: 'High School Girls',
     achievements: [
+      'Texas State Champion',
       'Undefeated at High School State Duals',
       'All victories by pin',
       'USA Wrestling competitor',
     ],
-    bio: 'A dominant force on the mat, Shelby has proven herself at the highest level of high school competition with an undefeated record at State Duals — all by pin.',
+    bio: 'A Texas State Champion and dominant force on the mat, Shelby has proven herself at the highest level of high school competition with an undefeated record at State Duals — all by pin.',
   },
   {
     name: 'Dalilah Coyle',
