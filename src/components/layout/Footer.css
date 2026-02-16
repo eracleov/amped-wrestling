@@ -1,0 +1,134 @@
+.footer {
+  background-color: var(--color-secondary);
+  color: var(--color-gray-300);
+  padding: 4rem 0 2rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.footer__logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.footer__tagline {
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-gray-400);
+}
+
+.footer__social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-secondary-light);
+  color: var(--color-gray-300);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.footer__social a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.footer__heading {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer__links a {
+  font-size: 0.9rem;
+  color: var(--color-gray-400);
+  transition: color 0.2s;
+}
+
+.footer__links a:hover {
+  color: var(--color-primary-light);
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.footer__contact-item svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--color-primary-light);
+}
+
+.footer__contact-item a {
+  color: var(--color-gray-400);
+  transition: color 0.2s;
+}
+
+.footer__contact-item a:hover {
+  color: var(--color-primary-light);
+}
+
+.footer__bottom {
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-secondary-light);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

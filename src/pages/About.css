@@ -1,0 +1,170 @@
+/* Page Hero (shared pattern) */
+.page-hero {
+  padding: 5rem 0 3rem;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  color: var(--color-white);
+}
+
+.page-hero__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.page-hero__subtitle {
+  font-size: 1.15rem;
+  color: var(--color-gray-400);
+  max-width: 500px;
+}
+
+/* Mission */
+.about__mission-text {
+  max-width: 750px;
+}
+
+.about__mission-text p {
+  font-size: 1.05rem;
+  color: var(--color-gray-600);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+/* Values */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.value-card {
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-200);
+}
+
+.value-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--color-primary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+}
+
+/* Coaches */
+.coaches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.coach-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: var(--color-secondary-light);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.coach-card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  border-radius: 50%;
+}
+
+.coach-card__name {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.coach-card__role {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-primary-light);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.coach-card__bio {
+  font-size: 0.9rem;
+  color: var(--color-gray-400);
+  line-height: 1.7;
+}
+
+/* Affiliations */
+.affiliations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.affiliation-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border: 2px solid var(--color-gray-200);
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.affiliation-card:hover {
+  border-color: var(--color-primary);
+}
+
+.affiliation-card svg {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.affiliation-card h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.affiliation-card p {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 768px) {
+  .page-hero__title {
+    font-size: 3rem;
+  }
+
+  .values-grid,
+  .coaches-grid,
+  .affiliations-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,157 @@
+.schedule-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.schedule-filter {
+  padding: 0.5rem 1.25rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--color-gray-200);
+  background: var(--color-white);
+  color: var(--color-gray-600);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.schedule-filter:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.schedule-filter--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.schedule-day {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.schedule-day__header {
+  padding: 1rem 1.5rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.schedule-day__header h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.schedule-day__classes {
+  padding: 1rem;
+}
+
+.schedule-class {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.schedule-class:last-child {
+  border-bottom: none;
+}
+
+.schedule-class__time {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+  margin-bottom: 0.4rem;
+}
+
+.schedule-class__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.schedule-class__name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.schedule-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.schedule-tag--wrestling {
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--color-primary);
+}
+
+.schedule-tag--bjj {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.schedule-tag--mma {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-accent);
+}
+
+.schedule-tag--openmat {
+  background: rgba(22, 163, 74, 0.1);
+  color: var(--color-success);
+}
+
+.schedule-class__coach {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--color-gray-500);
+  margin-bottom: 0.25rem;
+}
+
+.schedule-class__level {
+  font-size: 0.75rem;
+  color: var(--color-gray-400);
+}
+
+.schedule-note {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.schedule-note p {
+  font-size: 0.9rem;
+  color: var(--color-gray-500);
+  font-style: italic;
+}
+
+@media (max-width: 960px) {
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+}

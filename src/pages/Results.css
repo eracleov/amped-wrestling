@@ -1,0 +1,176 @@
+/* Season Banner */
+.results-season {
+  padding: 2rem 0;
+}
+
+.season-banner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-light));
+  border-radius: 8px;
+  color: var(--color-white);
+}
+
+.season-banner__record {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.season-banner__record svg {
+  color: var(--color-accent);
+}
+
+.season-banner__number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.season-banner__label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.season-banner__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.season-highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--color-gray-300);
+}
+
+.season-highlight svg {
+  color: var(--color-accent);
+}
+
+/* Results List */
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.result-card {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.result-card__header {
+  padding: 1.25rem 1.5rem;
+  background: var(--color-gray-50);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.result-card__event {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.result-card__meta {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.result-card__meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-gray-500);
+}
+
+.result-card__highlights {
+  padding: 1rem 1.5rem;
+}
+
+.result-entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.result-entry:last-child {
+  border-bottom: none;
+}
+
+.result-entry__athlete {
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 160px;
+}
+
+.result-entry__result {
+  flex: 1;
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+}
+
+.result-place {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.result-place--gold {
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309;
+}
+
+.result-place--silver {
+  background: rgba(156, 163, 175, 0.2);
+  color: #4b5563;
+}
+
+.result-place--bronze {
+  background: rgba(180, 83, 9, 0.1);
+  color: #92400e;
+}
+
+.result-place--default {
+  background: var(--color-gray-100);
+  color: var(--color-gray-600);
+}
+
+@media (max-width: 768px) {
+  .season-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .result-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .result-entry__athlete {
+    min-width: auto;
+  }
+}

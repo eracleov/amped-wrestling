@@ -1,0 +1,117 @@
+.program-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.program-detail:last-child {
+  border-bottom: none;
+}
+
+.program-detail--reverse {
+  direction: rtl;
+}
+
+.program-detail--reverse > * {
+  direction: ltr;
+}
+
+.program-detail__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--color-primary);
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.program-detail__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.program-detail__subtitle {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+}
+
+.program-detail__desc {
+  font-size: 1rem;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.program-detail__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.program-detail__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-gray-700);
+}
+
+.program-detail__features li svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.program-detail__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-detail__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(135deg, var(--color-gray-100), var(--color-gray-200));
+  border-radius: 12px;
+  color: var(--color-gray-400);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .program-detail {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+
+  .program-detail--reverse {
+    direction: ltr;
+  }
+
+  .program-detail__features {
+    grid-template-columns: 1fr;
+  }
+
+  .program-detail__title {
+    font-size: 2rem;
+  }
+}

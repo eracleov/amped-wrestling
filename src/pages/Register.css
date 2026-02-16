@@ -1,0 +1,138 @@
+.register-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.register-form {
+  padding: 2.5rem;
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+}
+
+.register-form h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group--checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.form-group--checkbox input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.3rem;
+  accent-color: var(--color-primary);
+}
+
+.form-group--checkbox label {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--color-gray-600);
+  line-height: 1.5;
+}
+
+/* Sidebar */
+.register-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.register-info-card {
+  padding: 2rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: 8px;
+}
+
+.register-info-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.register-info-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.register-info-card li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--color-gray-300);
+}
+
+.register-info-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+.register-info-card p {
+  font-size: 0.9rem;
+  color: var(--color-gray-300);
+  line-height: 1.6;
+}
+
+.register-info-card a {
+  color: var(--color-primary-light);
+}
+
+/* Success */
+.register-success {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.register-success svg {
+  color: var(--color-success);
+  margin-bottom: 1.5rem;
+}
+
+.register-success h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.register-success p {
+  font-size: 1.05rem;
+  color: var(--color-gray-600);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
