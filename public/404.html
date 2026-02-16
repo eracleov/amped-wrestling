@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amped Wrestling</title>
+    <script>
+      // Redirect all 404s to index.html for SPA routing
+      var path = window.location.pathname;
+      window.location.replace(
+        window.location.origin + '/amped-wrestling/' +
+        '?p=' + encodeURIComponent(path)
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
